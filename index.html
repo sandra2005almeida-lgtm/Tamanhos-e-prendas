@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fichas de tamanhos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1 id="h1">Ficha <em>dele</em></h1>
+  <p class="lead" id="lead"></p>
+  <div class="bar">
+    <div class="seg"><button class="tab" id="tEle" aria-pressed="true">Ficha dele</button><button class="tab" id="tEla" aria-pressed="false">Ficha dela</button></div>
+    <div class="row" style="margin-top:10px">
+      <div class="tabs">
+        <button class="tab" id="tFill" aria-pressed="true">Preencher</button>
+        <button class="tab" id="tView" aria-pressed="false">Respostas</button>
+        <button class="tab hide" id="tAsk" aria-pressed="false">Perguntar</button>
+      </div>
+      <span class="status" id="status">A ligar…</span>
+    </div>
+    <div class="prog"><i id="prog"></i></div>
+    <div class="status" id="count" style="margin-top:6px"></div>
+  </div>
+  <div id="extra"></div>
+  <div id="form"></div>
+  <div id="ask" class="hide"></div>
+  <div id="sum" class="sum hide"></div>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
